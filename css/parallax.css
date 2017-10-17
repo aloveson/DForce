@@ -1,8 +1,45 @@
 /* ===================================================================
  * parallx.rth
  * =================================================================== */
-
-
+#home{
+    overflow: hidden;
+}
+#bg02,#bg01{
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+#bg02 {
+    z-index: 1;
+}
+#bg01 {
+    z-index: 2;
+}
+.col-twelve{
+    z-index: 3;
+    position: relative
+}
+#bg02 img{
+    height: 100%;
+    left:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+#bg01 img{
+    width: 30%;
+    left:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
 
 
 
