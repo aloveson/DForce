@@ -40,6 +40,10 @@
     margin: auto;
     position: absolute;
 }
+.index-4{
+    position: relative;
+    z-index: 4;
+}
 
 
 

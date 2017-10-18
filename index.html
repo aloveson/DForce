@@ -95,20 +95,18 @@
    <!-- home
    ================================================== -->
    <section id="home">
-       <div id="bg01">
-           <img src="images/year.svg" alt="01">
+       <div id="bg01" class="anim-2">
+           <img src="images/year.svg" alt="01" data-parallax='{"y": -800, "from-scroll": 180, "distance": 0, "smoothness": 60}'>
        </div>
-       <div id="bg02">
-           <img src="images/bg01.svg" alt="01">
+       <div id="bg02" class="anim-3">
+           <img src="images/bg01.svg" alt="01" data-parallax='{"y": -800, "from-scroll": 250, "distance": 0, "smoothness": 80}'>
        </div>
    	<!-- <div class="overlay"></div> -->
 
    	<div class="home-content-table">
 		   <div class="home-content-tablecell">
-		   	<div class="row">
-		   		<div class="col-twelve">
-
-
+		   	<div class="row index-4" data-parallax='{"y": -800, "from-scroll": 80, "distance": 50, "smoothness": 40}'>
+		   		<div class="col-twelve anim-1">
 				  			<h1 class="animate-intro">DREAMFORCE</h1>
 
 				  			<!-- <div class="more animate-intro">
@@ -693,6 +691,7 @@
    <script src="js/TweenMax.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+	<script src="js/jquery.parallax-scroll.js"></script>
    <script src="js/parallax.js"></script>
 
 </body>

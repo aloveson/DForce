@@ -10,8 +10,13 @@ $.fn.parallax = function (resistance, mouse) {
 
 };
 $(document).mousemove(function (e) {
-    $('.col-twelve').parallax(5, e);
-    $('#bg01').parallax(20, e);
-    $('#bg02').parallax(-30, e);
-    $('#bg03').parallax(30, e);
+    $('.anim-1').parallax(5, e);
+    $('.anim-2').parallax(20, e);
+    $('.anim-3').parallax(-30, e);
+    
 });
+
+/************************************************************************
+************************************************************************/
+
+
