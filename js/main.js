@@ -137,55 +137,55 @@
 
   	/* Menu on Scrolldown
 	 * ------------------------------------------------------ */
-	var ssMenuOnScrolldown = function() {
-
-		var menuTrigger = $('#header-menu-trigger');
-
-		$WIN.on('scroll', function() {
-
-			if ($WIN.scrollTop() > 150) {
-				menuTrigger.addClass('opaque');
-			}
-			else {
-				menuTrigger.removeClass('opaque');
-			}
-
-		});
-	};
+	// var ssMenuOnScrolldown = function() {
+	//
+	// 	var menuTrigger = $('#header-menu-trigger');
+	//
+	// 	$WIN.on('scroll', function() {
+	//
+	// 		if ($WIN.scrollTop() > 150) {
+	// 			menuTrigger.addClass('opaque');
+	// 		}
+	// 		else {
+	// 			menuTrigger.removeClass('opaque');
+	// 		}
+	//
+	// 	});
+	// };
 
 
   	/* OffCanvas Menu
 	 * ------------------------------------------------------ */
-   var ssOffCanvas = function() {
-
-	       var menuTrigger = $('#header-menu-trigger'),
-	       nav             = $('#menu-nav-wrap'),
-	       closeButton     = nav.find('.close-button'),
-	       siteBody        = $('body'),
-	       mainContents    = $('section, footer');
-
-		// open-close menu by clicking on the menu icon
-		menuTrigger.on('click', function(e){
-			e.preventDefault();
-			menuTrigger.toggleClass('is-clicked');
-			siteBody.toggleClass('menu-is-open');
-		});
-
-		// close menu by clicking the close button
-		closeButton.on('click', function(e){
-			e.preventDefault();
-			menuTrigger.trigger('click');
-		});
-
-		// close menu clicking outside the menu itself
-		siteBody.on('click', function(e){
-			if( !$(e.target).is('#menu-nav-wrap, #header-menu-trigger, #header-menu-trigger span') ) {
-				menuTrigger.removeClass('is-clicked');
-				siteBody.removeClass('menu-is-open');
-			}
-		});
-
-   };
+  //  var ssOffCanvas = function() {
+	 //
+	//        var menuTrigger = $('#header-menu-trigger'),
+	//        nav             = $('#menu-nav-wrap'),
+	//        closeButton     = nav.find('.close-button'),
+	//        siteBody        = $('body'),
+	//        mainContents    = $('section, footer');
+	 //
+	// 	// open-close menu by clicking on the menu icon
+	// 	menuTrigger.on('click', function(e){
+	// 		e.preventDefault();
+	// 		menuTrigger.toggleClass('is-clicked');
+	// 		siteBody.toggleClass('menu-is-open');
+	// 	});
+	 //
+	// 	// close menu by clicking the close button
+	// 	closeButton.on('click', function(e){
+	// 		e.preventDefault();
+	// 		menuTrigger.trigger('click');
+	// 	});
+	 //
+	// 	// close menu clicking outside the menu itself
+	// 	siteBody.on('click', function(e){
+	// 		if( !$(e.target).is('#menu-nav-wrap, #header-menu-trigger, #header-menu-trigger span') ) {
+	// 			menuTrigger.removeClass('is-clicked');
+	// 			siteBody.removeClass('menu-is-open');
+	// 		}
+	// 	});
+	 //
+  //  };
 
 
   /* Smooth Scrolling
@@ -412,8 +412,8 @@
 		ssLightGallery();
 		ssFlexSlider();
 		ssOwlCarousel();
-		ssMenuOnScrolldown();
-		ssOffCanvas();
+		//ssMenuOnScrolldown();
+		//ssOffCanvas();
 		ssSmoothScroll();
 		ssPlaceholder();
 		ssAlertBoxes();
