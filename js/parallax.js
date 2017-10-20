@@ -10,45 +10,23 @@ $.fn.parallax = function (resistance, mouse) {
 
 };
 $(document).mousemove(function (e) {
-    $('.col-twelve').parallax(5, e);
-    $('#bg01').parallax(20, e);
-    $('#bg02').parallax(-30, e);
-    $('#bg03').parallax(30, e);
+    $('.anim-0').parallax(40, e);
+    $('.anim-1').parallax(35, e);
+    $('.anim-2').parallax(30, e);
+    $('.anim-3').parallax(25, e);
+    $('.anim-4').parallax(20, e);
+    $('.anim-5').parallax(15, e);
+    $('.anim-6').parallax(14, e);
+    $('.anim-7').parallax(13, e);
+    $('.anim-8').parallax(10, e);
+    $('.anim-9').parallax(9, e);
+    $('.anim-10').parallax(8.5, e);
+    $('.anim-11').parallax(8, e);
+    $('.anim-12').parallax(7.5, e);
+    $('.anim-13').parallax(7, e);
+    $('.anim-14').parallax(6.5, e);
+
 });
 
-
-
-
-
-//
-// $(window).mousemove(function(e) {
-//    var change;
-//    var xpos=e.clientX;
-//    var ypos=e.clientY;
-//     
-//    var left= change*20;
-//    var  xpos=xpos*2;ypos=ypos*2;
-//     console.log(xpos);
-//     console.log(ypos);
-//     /*
-//    $('.animate-intro').css('top',((0+(ypos/50))+"px"));
-//    $('.animate-intro').css('right',(( 0+(xpos/80))+"px"));
-//    $('.animate-intro').css('right',(( 0+(xpos/80))+"px"));
-//    */
-//     /*
-//     $('.animate-intro').css({
-//         'transform' : 'translate(' + xpos +', ' + ypos + ')'
-//     });
-//     */
-//     $('.animate-intro').css('-webkit-transform',  'translateX(' + xpos+ 'px)');
-//     $('.animate-intro').css('-webkit-transform',  'translateY(' + ypos+ 'px)');
-//  });
-
-/*
-
--moz-transform: translateX(0px) translateY(0px);
--webkit-transform: translateX(0px) translateY(0px);
--o-transform: translateX(0px) translateY(0px);
--ms-transform: translateX(0px) translateY(0px);
-transform: translateX(0px) translateY(0px);
-*/
+/************************************************************************
+************************************************************************/

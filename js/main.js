@@ -66,14 +66,14 @@
 
 	/*	Light Gallery
 	------------------------------------------------------- */
-	var ssLightGallery = function() {
-
-		$('#folio-wrap').lightGallery({
-			showThumbByDefault: false,
-			hash: false,
-			selector: ".item-wrap"
-		});
-	};
+	// var ssLightGallery = function() {
+	//
+	// 	$('#folio-wrap').lightGallery({
+	// 		showThumbByDefault: false,
+	// 		hash: false,
+	// 		selector: ".item-wrap"
+	// 	});
+	// };
 
 
 	/* Flexslider
@@ -107,9 +107,10 @@
 		$(".owl-carousel").owlCarousel({
 	      nav: false,
 				loop: true,
+				dots: false,
 				autoplay:true,
     		autoplayTimeout:2000,
-    		autoplayHoverPause:true,
+    		autoplayHoverPause:false,
 	    	margin: 50,
 	    	responsiveClass:true,
 	    	responsive: {
@@ -118,11 +119,11 @@
 	            margin: 20
 	         },
 	         400:{
-	            items:3,
+	            items:2,
 	            margin: 30
 	         },
 	         600:{
-	            items:4,
+	            items:3,
 	            margin: 40
 	         },
 	         1000:{
@@ -401,6 +402,26 @@
 	};
 
 
+	function setCarouselheight() {
+			var thumbHeight = $('body').height();
+			$('#home').css({
+					'min-height': thumbHeight + "px"
+			});
+
+	}
+
+
+						var scroll_pos = 0;
+            $(document).scroll(function() {
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 10) {
+                    $("header").css('background-color', '#003060');
+                } else {
+                    $("header").css('background', 'none');
+                }
+            });
+
+
 
   /* Initialize
 	* ------------------------------------------------------ */
@@ -409,8 +430,8 @@
 		ssPreloader();
 		ssFitVids();
 		ssMasonryFolio();
-		ssLightGallery();
-		ssFlexSlider();
+		//ssLightGallery();
+		//ssFlexSlider();
 		ssOwlCarousel();
 		//ssMenuOnScrolldown();
 		//ssOffCanvas();
@@ -422,6 +443,7 @@
 		ssContactForm();
 		ssAjaxChimp();
 		ssBackToTop();
+		setCarouselheight()
 
 	})();
 

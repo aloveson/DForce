@@ -51,6 +51,7 @@ html {
   html {
     font-size: 10px;
   }
+
 }
 @media only screen and (max-width: 400px) {
   html {
@@ -76,7 +77,7 @@ body {
  * links - (_document-setup)
  * ------------------------------------------------------------------- */
 a, a:visited {
-  color: #448baf;
+  color: #3fafe8;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -128,7 +129,7 @@ h2, .h02 {
 }
 
 h3, .h03 {
-  font-size: 2rem;
+  font-size: 4rem;
   line-height: 1.5;
 }
 
@@ -334,7 +335,7 @@ ul.disc li::before {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #448baf;
+  background: #3fafe8;
   position: absolute;
   left: -17px;
   top: 11px;
@@ -343,7 +344,7 @@ ul.disc li::before {
 
 dt {
   margin: 0;
-  color: #448baf;
+  color: #3fafe8;
 }
 
 dd {
@@ -1000,7 +1001,7 @@ input::-moz-focus-inner {
   color: #252525;
 }
 .stats-tabs li a:hover {
-  color: #448baf;
+  color: #3fafe8;
 }
 .stats-tabs li a em {
   display: block;
@@ -1144,29 +1145,31 @@ input::-moz-focus-inner {
 }
 .section-intro h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.8 rem;
   line-height: 1.667;
   color: rgba(242, 242, 242, 0.5);
-  text-transform: uppercase;
   letter-spacing: .3rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 3.2rem;
 }
 .section-intro .lead {
-  font-family: "montserrat-regular", sans-serif;
-  font-size: 1.8;
-  line-height: 1.833;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #ffcb65;
+  margin-top: 2rem;
+
 }
 .section-intro.with-bottom-sep {
-  padding-bottom: 4.2rem;
   position: relative;
 }
-.section-intro.with-bottom-sep::after {
+/*.section-intro.with-bottom-sep::after {
   display: inline-block;
   height: 1px;
   width: 200px;
   background-color: rgba(242, 242, 242, 0.1);
   text-align: center;
-}
+}*/
 
 /* -------------------------------------------------------------------
  * responsive:
@@ -1185,27 +1188,10 @@ input::-moz-focus-inner {
     font-size: 4rem;
   }
   .section-intro h3 {
-    font-size: 1.7rem;
+    font-size: 3rem;
   }
 }
-@media only screen and (max-width: 600px) {
-  .section-intro h1 {
-    font-size: 3.4rem;
-  }
-  .section-intro h3 {
-    font-size: 1.7rem;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .section-intro h3 {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .section-intro h1 {
-    font-size: 3.1rem;
-  }
-}
+
 .wide {
   max-width: 1300px;
 }
@@ -1236,7 +1222,8 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 99999;
+
 }
 header .row {
   height: auto;
@@ -1250,7 +1237,7 @@ header .row {
 header .header-logo {
   position: absolute;
   left: 32px;
-  top: 42px;
+  top: 20px;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
@@ -1353,10 +1340,9 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 #menu-nav-wrap {
   line-height: 1.6;
-  padding: 4.8rem 3rem;
+  padding: 3.8rem 3rem;
   float: right;
   height: 90px;
-  width: 40%;
   z-index: 800;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
@@ -1387,25 +1373,26 @@ header .header-logo a {
   width: 100%;
 }
 #menu-nav-wrap .nav-list li {
-  padding-left: 0;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.03);
   line-height:1.3;
   display: table-cell;
+  padding: 0px 1.8rem;
 }
 #menu-nav-wrap .nav-list li:first-child {
   border-top: 1px dotted rgba(0, 0, 0, 0.03);
 }
 #menu-nav-wrap .nav-list li a {
-  color: rgba(0, 0, 0, .8);
+  color: rgba(255, 255, 255, .8);;
   display: block;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 13px;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0px;
 }
 #menu-nav-wrap .nav-list li a:hover,
 #menu-nav-wrap .nav-list li a:focus {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);;
 }
 #menu-nav-wrap .header-social-list {
   list-style: none;
@@ -1491,6 +1478,7 @@ header .header-logo a {
     height: 24px;
     background-size: 51px 24px;
   }
+
 }
 @media only screen and (max-width: 400px) {
   #header-menu-trigger .header-menu-text {
@@ -1506,15 +1494,15 @@ header .header-logo a {
 #home {
   width: 100%;
   height: 100%;
-  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
   background-attachment: fixed;
-  min-height: 804px;
+  /*min-height: 804px;*/
   position: relative;
+  background: url('../images/sanfransico.jpg') no-repeat #fff;
 }
 #home .overlay {
   position: absolute;
@@ -1614,7 +1602,7 @@ header .header-logo a {
 }
 
 /* home social-list */
-.home-social-list {
+#home .home-social-list {
   position: absolute;
   left: 48px;
   bottom: 54px;
@@ -1624,8 +1612,9 @@ header .header-logo a {
   font-size: 2.4rem;
   line-height: 1.75;
   text-align: center;
+  z-index: 99999;
 }
-.home-social-list::before {
+#home .home-social-list::before {
   display: block;
   content: "";
   width: 2px;
@@ -1635,16 +1624,16 @@ header .header-logo a {
   margin-right: auto;
   margin-bottom: 12px;
 }
-.home-social-list li {
+#home .home-social-list li {
   padding-left: 0;
 }
-.home-social-list li a, .home-social-list li a:visited {
-  color: #171c39;
+#home .home-social-list li a,#home .home-social-list li a:visited {
+  color: rgba(255, 255, 255, .8);
 }
-.home-social-list li a:hover,
-.home-social-list li a:focus,
-.home-social-list li a:active {
-  color: #151515;
+#home .home-social-list li a:hover,
+#home .home-social-list li a:focus,
+#home .home-social-list li a:active {
+  color: rgba(255, 255, 255, 1);
 }
 
 /* scroll down */
@@ -1678,7 +1667,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  color: #171c39 !important;
+  color: rgba(255, 255, 255, 1) !important;
   background: transparent;
   position: relative;
   top: 36px;
@@ -1745,14 +1734,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     display: none;
   }
 
-  .home-social-list {
-    left: 36px;
-    bottom: 30px;
-    font-size: 2.1rem;
-  }
-  .home-social-list::before {
-    height: 30px;
-  }
 
   .scrolldown .scroll-icon {
     font-size: 1.2rem;
@@ -1821,8 +1802,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #about {
   position: relative;
-  padding: 4.2rem 0 12rem;
-  background-color: #171c39;
+  padding: 8rem 0 12rem;
+  background-color: #082342;
   min-height: 696px;
   text-align: center;
 }
@@ -1830,32 +1811,122 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   max-width: 850px;
 }
 #about span {
-  color: #448baf;
+  color: #3fafe8;
 }
 #about h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
   line-height: 1.667;
-  color: #448baf;
+  color: rgba(242, 242, 242, 1);
+  letter-spacing: .3rem;
+  position: relative;
+}
+
+#about h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.667;
+  color: #ffcb65;
   text-transform: uppercase;
   letter-spacing: .3rem;
   position: relative;
 }
-#about h3::before {
+
+/*#about h3::before {
   display: block;
   content: "";
   width: 3px;
   height: 9.6rem;
   background-color: rgba(149, 149, 149, 0.7);
   margin: 0 auto 2.4rem;
-}
+}*/
 #about .lead {
   font-family: 'Montserrat', sans-serif; /****bold****/
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 1.8;
-  color: #448baf;
-  margin-top: 6rem;
+  color: #ffcb65;
+  margin-top: 2rem;
+}
+
+#about .intro img{
+  width: 100px;
+  margin: auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+
+.aboutdetails{
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  margin: auto;
+  z-index: 9999;
+}
+
+.meetusbtn{
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  margin: 0 auto 40px;
+  max-width: 200px;
+  /*text-transform: uppercase;*/
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 4px;
+  background: #ffcb65;
+  color: #234b3d;
+}
+
+.meetusbtn:hover{
+  background: #fe9a4d;
+  font-weight: 400;
+
+}
+
+.aboutdetails h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 1.667;
+  text-align: center;
+  color:rgba(255, 255, 255, 1);
+  letter-spacing: .3rem;
+
+}
+.aboutdetails .lead {
+  font-family: 'Montserrat', sans-serif; /****bold****/
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 2rem;
+}
+
+/*.aboutdetails h3::before {
+  display: block;
+  content: "";
+  width: 3px;
+  height: 9.6rem;
+  background-color: rgba(149, 149, 149, 0.7);
+  margin: 0 auto 2.4rem;
+}*/
+
+.prize .col-full{
+  display: table;
+  width: 100%;
+}
+
+.prize .col-full .col-2{
+  display: table-cell;
+  float: none  !important;
+  width: calc(100% /3);
+}
+
+.prize .col-full .col-2 img{
+  height: 80px;
 }
 
 /* -------------------------------------------------------------------
@@ -1883,13 +1954,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 768px) {
   #about h3 {
-    font-size: 1.7rem;
+    font-size: 3rem;
   }
   #about .about-wrap {
     max-width: 600px;
   }
   #about .lead {
-    font-size: 3.1rem;
+    font-size: 1.7rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1899,18 +1970,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   #about .about-wrap {
     max-width: 500px;
   }
-  #about .lead {
-    margin-top: 4.8rem;
-    font-size: 2.8rem;
-  }
+
 }
 @media only screen and (max-width: 500px) {
   #about h3 {
     font-size: 1.5rem;
   }
-  #about .lead {
-    font-size: 2.5rem;
-  }
+
 }
 @media only screen and (max-width: 400px) {
   #about {
@@ -1919,9 +1985,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   #about .about-wrap {
     max-width: 380px;
   }
-  #about .lead {
-    font-size: 2.3rem;
-  }
+
 }
 
 
@@ -1931,15 +1995,16 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #services {
   background-color: #19191b;
-  background-image: url(../images/services-bg.jpg);
+  /*background-image: url(../images/services-bg.jpg);*/
+  background: url('https://c1.sfdcstatic.com/content/dam/web/en_us/events-master/dreamforce-2017/images/parallaxfullbleed/plax-bg-updated.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   min-height: 800px;
   position: relative;
-  padding: 15rem 0 15rem;
+  padding: 8rem 0 15rem;
   color: rgba(255, 255, 255, 0.3);
 }
 #services .overlay {
@@ -1956,25 +2021,82 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .4;
+  opacity: 1;
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
 }
 #services .section-intro h3 {
-  color: rgba(242, 242, 242, 0.8);
+  color: rgba(242, 242, 242, 1);
 }
 #services .section-intro h1 {
-  color: #448baf;
+  color: #3fafe8;
 }
 #services .section-intro .lead {
-  color: rgba(242, 242, 242, 0.8);
+  color: rgba(242, 242, 242, 1);
 }
 #services .services-content {
   text-align: center;
   max-width: 1040px;
 }
+
+#services .services-content ul{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+#services .services-content ul li{
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 2rem;
+  line-height: 1.3;
+  letter-spacing: .1rem;
+  color:  rgb(0, 48, 96);
+  display:block;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+  border-radius:15px;
+  padding: 10px;
+  position: relative;
+  background-color: rgba(255,255,255, .2);
+}
+
+#services .services-content ul li span{
+
+  margin: auto;
+    vertical-align: middle;
+    color: rgb(255,255,255);
+}
+
+#services .services-content ul li:before{
+  content: '';
+  background: rgb(255,255,255);
+  height: 8px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  margin-top: -4px;
+  border-radius: 4px;
+
+
+}
+
+#services .services-content ul li:after{
+  content: '';
+  background: rgb(255,255,255);
+  height: 8px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  margin-top: -4px;
+  border-radius: 4px;
+
+
+}
+
 #services .services-list {
   margin-top: 1.2rem;
   text-align: center;
@@ -2001,7 +2123,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #services .services-list .h05 {
   font-size: 1.7rem;
   line-height: 1.765;
-  color: #448baf;
+  color: #fff;
   margin-bottom: 3rem;
 }
 
@@ -2053,20 +2175,26 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #portfolio {
-  background: #171c39;
+  /*background: #171c39;*/
+
   min-height: 800px;
   position: relative;
   padding: 0;
+  background: url('../images/bg-pattern.jpg') top center;
+  background-size: cover;
+  padding: 8rem 21rem
+
 }
 #portfolio .intro-wrap {
-  padding: 15rem 0 21rem;
-  background: #111111;
+  padding: 0rem 0rem 4.2rem;
+  background:none;
+
 }
 #portfolio .section-intro h3 {
-  color: rgba(242, 242, 242, 0.8);
+  color: rgba(242, 242, 242, 1);
 }
 #portfolio .section-intro h1 {
-  color: #448baf;
+  color: #3fafe8;
 }
 #portfolio .section-intro .lead {
   color: rgba(242, 242, 242, 0.8);
@@ -2100,7 +2228,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   overflow: hidden;
 }
 .bricks-wrapper .item-wrap .overlay {
-  cursor: zoom-in;
+  cursor: pointer;
 }
 .bricks-wrapper .item-wrap .overlay img {
   vertical-align: bottom;
@@ -2164,9 +2292,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   z-index: 3;
 }
 .bricks-wrapper .item-wrap .item-text .folio-title {
-  color: #448baf;
+  color: #3fafe8;
   font-size: 2.2rem;
   line-height: 1.364;
+  width: 60%;
 }
 .bricks-wrapper .item-wrap .item-text .folio-types {
   font-family: "montserrat-regular", sans-serif;
@@ -2197,7 +2326,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   line-height: 4.2rem;
 }
 .bricks-wrapper .item-wrap .details-link:hover, .bricks-wrapper .item-wrap .details-link:focus {
-  background-color: #171c39;
+  background-color: #3fafe8;
   color: #000000;
 }
 .bricks-wrapper .item-wrap .item-text, .bricks-wrapper .item-wrap .details-link {
@@ -2252,10 +2381,20 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   .lg-sub-html {
     padding: 12px 15% 15px;
   }
+
+#portfolio{
+  padding: 8rem;
+  min-height: 360px;
+}
+
 }
 @media only screen and (max-width: 768px) {
   .lg-sub-html {
     padding: 12px 40px 15px;
+  }
+  #portfolio{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -2292,7 +2431,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   #portfolio .intro-wrap {
-    padding: 12rem 0 21rem;
+    padding: 0rem 0 21rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -2314,18 +2453,31 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #testimonials {
   background: #171c39;
-  padding: 12rem 0 7.8rem;
+  padding: 8rem 0 7.8rem;
   text-align: center;
+  background: url('../images/portfolio.jpg') bottom center no-repeat;
+  background-size: cover;
+
 }
 #testimonials h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   line-height: 1.667;
-  color: #448baf;
+  color: #3fafe8;
   text-transform: uppercase;
   letter-spacing: .3rem;
   position: relative;
-  margin-bottom: 4.2rem;
+  margin-bottom: 3.2rem;
+}
+
+#testimonials h3 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.667;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: .3rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 #testimonials .flex-container {
@@ -2340,12 +2492,21 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #testimonial-slider .slides {
   padding-bottom: 3rem;
+  display: block;
+  width: 100%;
 }
+
+#testimonial-slider .slides li{
+  display: inline-block;
+  width: 33.33333%;
+  float: left;
+}
+
 #testimonial-slider p {
   font-family: 'Montserrat', sans-serif; /****bold****/
   font-size: 3rem;
   line-height: 1.8;
-  color: #448baf;
+  color: #3fafe8;
 }
 #testimonial-slider p::before, #testimonial-slider p::after {
   display: inline-block;
@@ -2361,7 +2522,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   content: '\201D';
 }
 #testimonial-slider .testimonial-author {
-  margin-top: 4.2rem;
+  margin-top:1.2rem;
 }
 #testimonial-slider .testimonial-author img {
   width: 20rem;
@@ -2380,16 +2541,17 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   font-size: 2rem;
   margin-top: .9rem;
   margin-bottom: 3rem;
-  color: #448baf;
+  color: #3fafe8;
 }
 #testimonial-slider .testimonial-author .author-info span {
   display: block;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
+  font-weight: normal;
   line-height: 1.313;
   letter-spacing: 0;
   text-transform: none;
-  color: rgba(68, 139, 175, .5);
+  color: rgba(255, 255, 255, 1);
   margin-top: .3rem;
 }
 
@@ -2439,12 +2601,16 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     font-size: 1.7rem;
   }
 
+  #testimonials h3 {
+    font-size: 3rem;
+  }
+
   #testimonial-slider p {
     font-size: 2.5rem;
   }
   #testimonial-slider .testimonial-author img {
-    width: 6.6rem;
-    height: 6.6rem;
+    width: 20rem;
+    height: 20rem;
   }
   #testimonial-slider .testimonial-author .author-info {
     font-size: 1.8rem;
@@ -2484,7 +2650,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #clients {
   background-color: #e9eaea;
-  padding: 4.8rem 0 4.8rem;
+  padding: 8rem 0 4.8rem;
 }
 #clients .client-lists .owl-item {
   opacity: .6;
@@ -2552,6 +2718,23 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background-color: #000000;
 }
 
+#clients h3 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.667;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: .3rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  #clients h3 {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+}
+
 
 /* ===================================================================
  *  16. contact - (_layout.scss)
@@ -2565,7 +2748,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  padding: 12rem 0 12rem;
+  padding: 8rem 0 12rem;
   position: relative;
 }
 #contact .overlay {
@@ -2596,7 +2779,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
 }
 .contact-content h5 {
-  color: #448baf;
+  color: #ffcb65;
   margin-bottom: 5.4rem;
 }
 .contact-content h6 {
@@ -2699,12 +2882,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   line-height: 6rem;
   padding: 0 3rem;
   width: 100%;
-  background: #f9a828;
+  background: #ffcb65;
   color: #000000;
   margin-top: .6rem;
+  border-radius: 4px;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-  background: #f89e0f;
+  background: #fe9a4d;
 }
 
 #message-warning, #message-success {
@@ -2826,10 +3010,21 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     text-align: center;
   }
 
+  .prize .col-full .col-2{
+    display: block;
+    width: inherit;
+  }
+
+  #testimonial-slider .slides li{
+    width: 100%;
+    display: block;
+  }
+
   .contact-info {
     width: 100%;
     margin-top: 3.6rem;
   }
+
 }
 @media only screen and (max-width: 600px) {
   .contact-content {
@@ -2853,13 +3048,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 footer {
-  margin: 0 0 5.4rem 0;
+  margin: 0 0;
   padding: 0;
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.4);
+  background: #082342;
 }
 footer a, footer a:visited {
-  color: #171c39;
+  color: #ffcb65;
 }
 footer a:hover, footer a:focus {
   color: #f9a828;
@@ -2868,10 +3064,10 @@ footer .row {
   max-width: 1024px;
 }
 footer h4.h05 {
-  color: #171c39;
+  color: #ffcb65;
   position: relative;
-  padding-bottom: 4.2rem;
-  margin-bottom: 3.6rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 footer h4.h05::after {
   display: block;
@@ -2887,9 +3083,15 @@ footer h4.h05::after {
 /* footer main
  * --------------------------------- */
 .footer-main {
-  padding-top: 9.6rem;
+  padding-top: 8rem;
   padding-bottom: 3rem;
+
 }
+
+.footer-main .tab-full{
+  position: relative;
+}
+
 .footer-main ul {
   font-size: 1.5rem;
   margin-left: 0;
@@ -2897,12 +3099,14 @@ footer h4.h05::after {
 .footer-main ul li {
   list-style: none;
   padding-left: 0;
+  display: inline-block;
+  padding-right: 10px;
 }
 .footer-main ul a, .footer-main ul a:visited {
-  color: rgba(255, 255, 255, 0.4);
+  color: #ffcb65;
 }
 .footer-main ul a:hover, .footer-main ul a:focus {
-  color: #171c39;
+  color: #fe9a4d;
 }
 .footer-main .subscribe-form {
   position: relative;
@@ -2945,10 +3149,42 @@ footer h4.h05::after {
   font-family: "montserrat-regular", sans-serif;
 }
 
+.footer-main .home-social-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 2.4rem;
+  line-height: 1.75;
+  text-align: center;
+  z-index: 99999;
+
+}
+.footer-main .home-social-list::before {
+  display: none;
+
+}
+.footer-main .home-social-list li {
+  padding-right:20px;
+  display: inline-block;
+  float: left;
+
+}
+.footer-main .home-social-list li a,.footer-main .home-social-list li a:visited {
+  color: rgba(255, 255, 255, .8);
+}
+.footer-main .home-social-list li a:hover,
+.footer-main .home-social-list li a:focus,
+.footer-main .home-social-list li a:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+
 /* footer bottom
  * --------------------------------- */
 .footer-bottom {
-  margin-top: 3rem;
   text-align: center;
   font-family: "montserrat-regular", sans-serif;
   font-size: 1.4rem;
@@ -3008,10 +3244,33 @@ footer h4.h05::after {
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+.footer-main .tab-full{
+  width: 100%;
+  margin-top: 3rem;
+}
+ }
 @media only screen and (max-width: 768px) {
+  .aboutdetails .lead{
+    margin-top: 1rem;
+  }
+
+  #bg01 svg{
+    height: 30%;
+  }
   #go-top {
     bottom: 0;
     right: 0;
+  }
+
+  .aboutdetails h3{
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+
+  .aboutdetails .lead{
+    font-size: 1.7rem;
+    line-height: 1.3;
   }
 
   .footer-main {
@@ -3033,6 +3292,28 @@ footer h4.h05::after {
     left: 50%;
     margin-left: -50px;
   }
+
+  footer .home-social-list {
+    position: inherit !important;
+    display: table !important;
+    margin: 0 auto !important;
+
+  }
+
+  .footer-links ul{
+    display: table !important;
+    margin: 0 auto !important;
+  }
+
+  .footer-links ul li{
+    display: block !important;
+
+  }
+
+  .copyright{
+    margin-bottom: 2.2rem;
+  }
+
 }
 @media only screen and (max-width: 600px) {
   .footer-bottom {

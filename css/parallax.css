@@ -15,6 +15,15 @@
 #bg02 {
     z-index: 1;
 }
+#bg01 svg{
+    height: 50%;
+    left:0;
+    top: 15%;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    overflow: visible;
+}
 #bg01 {
     z-index: 2;
 }
@@ -23,13 +32,15 @@
     position: relative
 }
 #bg02 img{
-    height: 100%;
+    height: 200%;
     left:0;
     top: 0;
     bottom: 0;
     right: 0;
     margin: auto;
     position: absolute;
+    overflow: visible;
+    display: none;
 }
 #bg01 img{
     width: 30%;
@@ -40,8 +51,7 @@
     margin: auto;
     position: absolute;
 }
-
-
-
-
-
+.index-4{
+    position: relative;
+    z-index: 4;
+}
