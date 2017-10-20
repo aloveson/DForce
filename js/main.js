@@ -194,9 +194,10 @@
 	var ssSmoothScroll = function() {
 
 		$('.smoothscroll').on('click', function (e) {
+            $('#nav-icon3,#menu-nav-wrap').removeClass('open');
 			var target = this.hash,
 			$target    = $(target);
-
+            
 		 	e.preventDefault();
 		 	e.stopPropagation();
 

@@ -30,3 +30,9 @@ $(document).mousemove(function (e) {
 
 /************************************************************************
 ************************************************************************/
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+		$('#menu-nav-wrap').toggleClass('open');
+	});
+});
