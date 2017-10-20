@@ -35,7 +35,4 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 		$('#menu-nav-wrap').toggleClass('open');
 	});
-    $(document).on('click', '.nav-list li' , function(){
-//		$('#nav-icon3,#menu-nav-wrap').removeClass('open');
-	});
 });
