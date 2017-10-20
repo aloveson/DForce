@@ -1252,11 +1252,6 @@ header .header-logo a {
   border: none;
   width: 100px;
   height: 50px;
-  background: url("../images/brand-logo.svg") no-repeat center;
-  background-size: contain;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1474,9 +1469,8 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   header .header-logo a {
-    width: 51px;
-    height: 24px;
-    background-size: 51px 24px;
+    width: 90px;
+
   }
 
 }
@@ -1743,7 +1737,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 600px) {
   #home {
-    min-height: 702px;
+
+    height: auto;
   }
 
   .home-content-tablecell .row {
@@ -1962,6 +1957,18 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   #about .lead {
     font-size: 1.7rem;
   }
+
+  .aboutdetails {
+     position: inherit;
+     bottom:0;
+     left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+    margin-top: 250px;
+    width: 55%;
+}
+
 }
 @media only screen and (max-width: 600px) {
   #about {
@@ -3285,7 +3292,7 @@ footer h4.h05::after {
   }
 
   #bg01 svg{
-    height: 30%;
+    height: 18%;
   }
   #go-top {
     bottom: 0;
