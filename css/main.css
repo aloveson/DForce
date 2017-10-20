@@ -2754,6 +2754,16 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   max-width: 90%;
 }
 
+#boothmap h3{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.667;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: .3rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 
 /* ===================================================================
  *  16. contact - (_layout.scss)
