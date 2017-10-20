@@ -195,6 +195,7 @@
 
 		$('.smoothscroll').on('click', function (e) {
             $('#nav-icon3,#menu-nav-wrap').removeClass('open');
+
 			var target = this.hash,
 			$target    = $(target);
 
@@ -202,7 +203,7 @@
 		 	e.stopPropagation();
 
 	    	$('html, body').stop().animate({
-	       	'scrollTop': $target.offset().top
+	       	'scrollTop': ($target.offset().top)
 	      }, cfg.scrollDuration, 'swing').promise().done(function () {
 
 	      	// check if menu is open
