@@ -201,9 +201,12 @@
 
 		 	e.preventDefault();
 		 	e.stopPropagation();
-
+            var scrollTop = $target.offset().top
+            if($(window).width() > 768){
+                scrollTop = scrollTop - $('header').height();
+            }
 	    	$('html, body').stop().animate({
-	       	'scrollTop': ($target.offset().top)
+	       	'scrollTop': scrollTop
 	      }, cfg.scrollDuration, 'swing').promise().done(function () {
 
 	      	// check if menu is open
@@ -211,7 +214,7 @@
 					$('#header-menu-trigger').trigger('click');
 				}
 
-	      	window.location.hash = target;
+//	      	window.location.hash = target;
 	      });
 	  	});
 
